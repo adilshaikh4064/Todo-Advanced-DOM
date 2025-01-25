@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Sour Gummy", serif;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Sour Gummy', sans-serif;
+    background-color: #aaaaaa;
+}
+main{
+    /* flex: 1; */
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    margin-bottom: 10rem;
+}
+.todo-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.divisions{
+    width: 25%;
+}
+.control-panel{
+    display: contents;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: .25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    border-radius: 0.50rem;
+}
+.menu-button{
+    all: unset;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+.menu-button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 0.50;
+}
+.menu-para{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+
+
+
+
+.task-lists{
+    width: 100%;
+    position: relative;
+}
+.new-todo{
+    all: unset;
+    width: 100%;
+    height: 3rem;
+    background-color: black;
+    color: white;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 250;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    border-radius: 0.50rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.new-todo:hover{
+    cursor: pointer;
+    transform: scale(1.025);
+}
+.todoAddButton{
+    box-shadow: 0.25rem 0.25rem 0.5rem 5px red;
+}
+.inprocessAddButton{
+    box-shadow: 0.25rem 0.25rem 0.5rem 5px blue;
+}
+.inurAddButton{
+    box-shadow: 0.25rem 0.25rem 0.5rem 5px orange;
+}
+.finishedAddButton{
+    box-shadow: 0.25rem 0.25rem 0.5rem 5px green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .label{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-right: 0.75rem;
+}
+#label-para{
+    width: 5rem;
+    color: red;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 1.5rem;
+    transition: transform 0.3s ease-in;
+}
+#label-para:hover{
+    transform: scale(1.1);
+}
+#time-para{
+    width: 5rem;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+#task-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    box-sizing: border-box;
+    padding: 1rem 0.75rem;
+    background-color: #f9f9f9;
+    border: 0.5px solid grey;
+    border-radius: 0.5rem;
+} */
+/* .options{
+    background-color: #dedbe2;
+    background-color: #676767;
+    color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.options button{
+    padding: 0.25rem;
+}
+#toinpro:hover{
+    color: #b5e2ff;
+}
+#tounre:hover{
+    color: #fecb98;
+}
+#tofin:hover{
+    color: #aaf0c9;
+}
+.del-button{
+    transition: transform 0.3s ease-in;
+}
+.del-button:hover{
+    transform: scale(1.1);
+} */
+button{
+    all: unset;
+    cursor: pointer;
+}
+.label-form{
+    display: flex;
+    justify-content: space-around;
+}
+#label-para-form{
+    width: 5rem;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 1.5rem;
+}
+form div input{
+    width: 100%;
+    height: 1.5rem;
+}
+form {
+    display: none;
+    box-sizing: border-box;
+    margin-top: .5rem;
+    padding: 0.50rem;
+    background-color: #999999;
+    border-radius: 0.50rem;
+}
+form div{
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+#submit-button{
+    background-color: black;
+    color: white;
+    height: 2rem;
+    border-radius: 1rem;
+}
+#submit-button button{
+    width: 100%;
+    height: 100%;
+}
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    background-color: #f9f9f9;
+    border-top: 1px solid black;
+}
+.overview{
+    display: flex;
+    justify-content: space-around;
+    /* gap: 1rem; */
+    border-top: 1px solid black;
+    background-color: #bbbbbb;
+}
+.overview-section{
+    width: 25%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    border-left: 0.5px solid black;
+    border-right: 0.5px solid black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.left{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    /* margin-bottom: 1rem; */
+}
+.left p{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.right{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.without-color{
+    height: 1rem;
+    border-radius: 2rem;
+}
+.with-color{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+.circle{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle p{
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+
+.todos-circle{
+    background-color: #ffcccb;
+    border: 1px solid red;
+}
+.todos-without{
+    border: 1px solid red;
+}
+.todos-with{
+    background-color: red;
+}
+.todos-left p{
+    text-shadow: 1px 1px red;
+}
+.inprogress-circle{
+    background-color: #b5e2ff;
+    border: 1px solid blue;
+}
+.inprogress-without{
+    border: 1px solid blue;
+}
+.inprogress-with{
+    background-color: blue;
+}
+.inprogress-left p{
+    text-shadow: 1px 1px blue;
+}
+.underreview-circle{
+    background-color: #fecb98;
+    border: 1px solid orange;
+}
+.underreview-without{
+    border: 1px solid orange;
+}
+.underreview-with{
+    background-color: orange;
+}
+.underreview-left p{
+    text-shadow: 1px 1px orange;
+}
+.finished-circle{
+    background-color: #aaf0c9;
+    border: 1px solid green;
+}
+.finished-without{
+    border: 1px solid green;
+}
+.finished-with{
+    background-color: green;
+}
+.finished-left p{
+    text-shadow: 1px 1px green;
+}
+
+
+
+
+
+.footer-para{
+    width: 100%;
+    height: 2.5rem;
+    overflow: hidden;
+    position: relative; 
+    background-color: #ddd;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.progress-bar{
+    height: 100%;
+    width: 0;
+    /* background: linear-gradient(90deg, red, yellow, green); */
+    background: linear-gradient(90deg, #ccffcc, #66cc66, #004d00);
+    /* border-radius: 15px; */
+    transition: width 0.5s ease, background-position 0.5s ease;
+    background-size: 300% 100%;
+    animation: float 2s infinite linear;
+    /* background: red;
+    transition: width 0.3s ease, background 0.3s ease; */
+}
+@keyframes float {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+.progress{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 2rem;
+    /* mix-blend-mode: difference; */
+}
+
+
+
+
+
+
+
+
+/* <!-- <div id="task-1">
+    <div class="content">
+        <h2>todo</h2>
+        <p id="todo-disc" style="color: #728294; font-weight: 300;">this is the discription this is the discriptionthis is the discriptionthis is the discriptionthis is the discriptionthis is the discriptionthis is the discriptionthis is the discriptionthis is the discriptionthis is the discriptionthis is the discriptionthis is the discription</p>
+    </div>
+    <div class="label">
+        <button><p id="label-para">label</p></button>
+        <p id="time-para">time para</p>
+    </div>
+    <div class="options">
+        <button id="toinpro">In Progress</button>
+        <button id="tounre">Under Review</button>
+        <button id="tofin">Finished</button>
+        <div class="del-button" style="background-color: red; border-radius: .5rem; color: black;"><button style="width: full;">delete</button></div>
+    </div>
+</div> --> */
