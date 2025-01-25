@@ -53,8 +53,4 @@ Feel free to fork this repository and submit pull requests for any improvements 
 
 ## Feedback
 
-I’d love to hear your feedback! Reach out to me on [LinkedIn](https://linkedin.com/in/yourprofile) or [Twitter](https://twitter.com/yourhandle).
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
+I’d love to hear your feedback! Reach out to me on [LinkedIn](https://linkedin.com/in/adilshaikh4064) or [Twitter](https://x.com/adilshaikh4064).
